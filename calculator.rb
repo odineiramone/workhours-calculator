@@ -5,9 +5,6 @@ require 'optparse'
 require './lib/time_formater.rb'
 require './lib/worked_hours_calculator.rb'
 
-# This will hold the options we parse
-options = {}
-
 OptionParser.new do |parser|
   parser.banner = 'Usage: ruby calculator.rb [options]'
 
