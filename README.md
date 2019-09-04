@@ -32,3 +32,11 @@ Simple!
     $ ruby calculator.rb -p '09:37 12:00 12:42 18:19 18:53 20:03'
     You worked for 9:10 in this period.
     ```
+
+## Run tests
+
+In your terminal, run:
+
+```bash
+bin/test
+```
