@@ -10,7 +10,7 @@ class WorkedHoursCalculator
       start_time   = Time.parse(start_time)
       finish_time  = Time.parse(finish_time)
 
-      difference_in_seconds = finish_time - start_time
+      finish_time - start_time
     end
    
     elapsed_time_per_period_in_seconds.sum

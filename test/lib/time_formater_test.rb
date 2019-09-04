@@ -1,5 +1,4 @@
-require 'minitest/autorun'
-require './lib/time_formater.rb'
+require './test/test_helper'
 
 class TimeFormaterTest < Minitest::Test
   def test_returns_formated_time

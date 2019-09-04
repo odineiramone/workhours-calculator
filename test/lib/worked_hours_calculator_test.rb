@@ -1,5 +1,4 @@
-require 'minitest/autorun'
-require './lib/worked_hours_calculator.rb'
+require './test/test_helper'
 
 class WorkedHoursCalculatorTest < Minitest::Test
   def test_returns_formated_time
