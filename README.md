@@ -18,6 +18,14 @@ $ ruby calculator.rb -p '09:37 12:00 12:42 18:19'
 You worked for 8:00 in this period.
 ```
 
+You can provide more than one period of time separated by semicolon
+
+```bash
+$ ruby calculator.rb -p '09:37 12:00 12:42 18:19 18:53 20:03; 09:37 12:00 12:42 18:19'
+You worked for 9:10 in this period.
+You worked for 8:00 in this period.
+```
+
 Simple!
 
 ## Important information ⚠️
