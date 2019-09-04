@@ -3,8 +3,8 @@
 require 'optparse'
 require 'time'
 
-require './time_formater.rb'
-require './worked_hours_calculator.rb'
+require './lib/time_formater.rb'
+require './lib/worked_hours_calculator.rb'
 
 # This will hold the options we parse
 options = {}
