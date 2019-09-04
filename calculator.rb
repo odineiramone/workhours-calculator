@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
-require 'time'
 
 require './lib/time_formater.rb'
 require './lib/worked_hours_calculator.rb'
