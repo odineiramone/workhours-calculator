@@ -26,6 +26,19 @@ You worked for 9:10 in this period.
 You worked for 8:00 in this period.
 ```
 
+And you can provide a .csv file!
+
+```bash
+# Creating a .csv file
+echo -e "09:00,12:00,13:15,18:15\n09:00,12:00,13:15,18:15\n09:37,12:00,12:42,18:19\n09:37,12:00,12:42,18:19,18:53,20:03" > workhours.csv
+
+$ ruby calculator.rb -f 'workhours.csv'
+You worked for 8:00 in this period.
+You worked for 8:00 in this period.
+You worked for 8:00 in this period.
+You worked for 9:10 in this period.
+```
+
 Simple!
 
 ## Important information ⚠️

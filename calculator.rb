@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
+require 'csv'
 
 require './lib/time_formater.rb'
 require './lib/worked_hours_calculator.rb'
@@ -20,6 +21,22 @@ OptionParser.new do |parser|
         calculator = WorkedHoursCalculator.new(time_periods.strip)
         total_elapsed_time = calculator.calculate
         
+        formatter = TimeFormatter.new(total_elapsed_time)
+        puts formatter.formated_time
+      end
+    end
+  end
+
+  parser.on('-f', '--file FILE_PATH', 'Read periods of time from a .csv (comma-separated values) file. File path must be between quotes') do |args|
+    csv_file_path = args
+
+    if csv_file_path
+      time_periods_list = CSV.read(csv_file_path)
+
+      time_periods_list.each do |time_periods|
+        calculator = WorkedHoursCalculator.new(time_periods.join(' '))
+        total_elapsed_time = calculator.calculate
+
         formatter = TimeFormatter.new(total_elapsed_time)
         puts formatter.formated_time
       end
